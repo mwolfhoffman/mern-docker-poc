@@ -1,9 +1,0 @@
-build:
-  docker:
-    client: ./client/Dockerfile
-    api: ./api/Dockerfile
-  config: 
-    NODE_ENV: production
-run:
-  client: cd client && npm run start
-  api: node ./api/bin/www
