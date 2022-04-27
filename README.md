@@ -1,9 +1,7 @@
-# React + Express Docker POC
+# mern-docker-poc
 
-POC to get React client making requests to node backend.
+Proof of concept to get a MERN app working with docker. I'm using this to learn more about docker and devops. I'm planning to add k8s, nginx and more later.
+
 
 ## To Run:
-- `docker-compose up -d`
-
-## To Deploy to Heroku: 
-Follow these [docs](https://devcenter.heroku.com/articles/container-registry-and-runtime).
+- `docker-compose up`
