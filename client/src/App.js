@@ -8,7 +8,6 @@ function App() {
   const fetchMessage = async () => {
     const res = await fetch("/test");
     if (res.ok) {
-      debugger
       const data = await res.json();
       setMessage(data.message);
       setLoading(false);
