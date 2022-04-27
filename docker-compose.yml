@@ -12,7 +12,8 @@ services:
       - "5000:5000"
     links: 
       - mongodb
-
+    depends_on:
+      - mongodb
 
   client:
     build: ./client
