@@ -3,7 +3,7 @@ version: '3.9'
 services:
   api:
     build: ./api
-    command: ["npm", "run", "dev"]
+    command: ["npm", "run", "start"]
     volumes:
       - ./api:/api
     environment:
@@ -24,5 +24,14 @@ services:
     depends_on:
       - api
 
+  mongodb:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes: 
+      - data:/data/db
+
+
 volumes:
   node-modules:
+  data:
