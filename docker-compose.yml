@@ -1,6 +1,13 @@
 version: '3.9'
 
 services:
+  # nginx:
+  #   restart: always
+  #   build:
+  #     dockerfile: Dockerfile
+  #     context: ./nginx
+  #   ports:
+  #     - '80:80'
   api:
     build: ./api
     command: ["npm", "run", "start"]
@@ -25,8 +32,10 @@ services:
     environment:
       - NODE_ENV=development
     ports:
-      - '3030:3030'
+      - '3000:3000'
     depends_on:
+      - api
+    links:
       - api
 
   mongodb:
