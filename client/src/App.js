@@ -6,7 +6,7 @@ function App() {
   const [message, setMessage] = useState(undefined);
 
   const fetchMessage = async () => {
-    const res = await fetch("http://localhost:5000/test");
+    const res = await fetch("http://localhost:8000/test");
     if (res.ok) {
       const data = await res.json();
       setMessage(data.message);
