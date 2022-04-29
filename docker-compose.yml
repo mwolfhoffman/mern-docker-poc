@@ -25,7 +25,7 @@ services:
     environment:
       - NODE_ENV=development
     ports:
-      - '3030:3030'
+      - '3000:3000'
     depends_on:
       - api
 
