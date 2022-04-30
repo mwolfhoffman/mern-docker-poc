@@ -4,4 +4,9 @@ Proof of concept to get a MERN app working with Docker. I'm using this to learn 
 
 
 ## To Run:
-- `docker-compose up`
+1. clone repo.
+1. `docker-compose up`
+
+## Deployment:
+1. TBD
+
